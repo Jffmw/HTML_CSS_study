@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste com hover</title>
+    <style>
+        div > p {  /* ">" indica um filho da tag*/
+            display: none;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p { /* aqui esta sendo usada uma pseudo classe do div no seu filho p */
+            display: block;
+            color: white;
+            background-color: black;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse</p>
+    <div>
+        passe o mouse aqui...
+        <p>oi gatito</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <!--
+        criando uma mesma imagem com resoluções e tamanhos diferentes para se adaptarem de acordo com a resolução da tela onde é acessado. 
+    -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="pictures/imagem_pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="pictures/imagem_media.png" type="image/png">
+        <img src="pictures/imagem_grande.png" alt="imagem flexível">
+    </picture>
+    <!-- 
+        tag "picture" cria uma classe de imagem onde dentro dela pode ser utilizada a tag "img" de se adicionar imagens.
+        usando a tag "source" podemos colocar uma resolução máxima do navegador (ou minima) para que a imagem em "img" seja trocada por outro arquivo (caso a resolução seja menor (max-width) que x pixel, trocar o arquivo original por tal arquivo).
+        assim temos uma imagem que se adapta de acordo com o navegador do usuário.
+        a ordem dos sources deve ser de cima para baixo começando pelo arquivo de menor resolução.
+    -->
+
+
+    <hr>
+
+    <h1>Audios</h1>
+    <audio 
+        src="audios/Island Dream - Chris Haugen.mp3" controls>
+    </audio>
+    <!--
+        tag "audio" aceita os formatos mp3 WAV e OGG.
+        o parâmetro "controls" insere os controles de áudio na página.
+        Este formato é limitado.                                                          
+    -->
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audios/Island Dream - Chris Haugen.mp3" type="audio/mpeg">
+        <p>
+            Infelizmente seu navegador não pode reproduzir esse áudio. <br>
+            <a href="audios/Island Dream - Chris Haugen.mp3">clique aqui para baixar o arquivo MP3</a>
+            <!--
+                é possivel colocar vários formatos de arquivo para o mesmo áudio.
+                o navegador tentará carregar os arquivos até encontrar um que funcione.
+                se nenhum carregar foi adicionado uma mensagem explicativa.
+            -->
+        </p>
+    </audio>
+    <!--
+        Esse formato de inserção de áudio cria uma classe para o arquivo escolhido.
+        Mais versátil 
+
+        Aceita mais parâmetros como:
+        
+        "preload" determina o quanto do arquivo será carregado ao se carregar a página. 
+            No preload temos "auto" que carrega todo o arquivo ao inicializar a página. Pouco recomendado, deixa a página lenta. 
+            "metadata" carrega os metadados do arquivo. "none" não carrega nada do arquivo até que o usuário aperte play.
+            Caso seja deixado em branco o padrão é "auto", não recomendado.
+        
+        "autoplay" faz com que o áudio de play automaticamente. Deve-se colocar o preload em auto.
+
+        "loop" deixa o arquivo tocando em loop
+    -->
+    <hr>
+
+    <h1>vídeos</h1>
+    <h2>hospedagem local</h2>
+    <video poster="videos/thumb_cortina_em_escala.jpg" controls>
+        <source src="videos/cortina.mp4" type="video/mp4">
+        <p>
+            seu navegador não tem compatibilidade com mp4
+        </p>
+    </video>
+    <!--
+        Foi criado uma classe para o vídeo.
+        Pode-se colocar vários formatos de vídeo por questões de compatibilidade de navegadores.
+        Na tag "video" pode-se colocar vários parâmetros como na de audio.
+        Um parametro novo foi "poster" que adiciona uma imagem de thumb no vídeo.
+    -->
+
+    <h2>hospedagem remota</h2>
+    <h3>youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/m7p0C9VJu6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/7466309?h=eca17c0f9a" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

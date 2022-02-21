@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
+        /**
+        Fonte importada direto do google fontes.
+        Necessita de internet para ser carregada
+        **/
+        
+
+
+        
+        /**
+            Importando uma fonte direto de um aquivo baixado.
+            o arquivo deve estar armazenado na pasta do index do html.
+        **/
+        @font-face {
+            font-family: 'Hills';
+            src: url('fonts/Mount_Hills.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /**
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype 
+            - truetype-aat
+            - svg
+        **/
+
+        @font-face {
+            font-family: 'Robot';
+            src: url('fonts/MR_ROBOT.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+
+
+        body {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2em;
+            font-weight: normal;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Importando fontes externas</h1>
+
+    <h2>Importando do Google Fontes</h2>
+    <p style="font-family: 'Island Moments', cursive; font-weight: normal;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga soluta quod sunt, consequatur iure eaque laborum accusantium error praesentium, eos, perspiciatis rerum. Rem temporibus sit, debitis fugit assumenda cumque asperiores!
+    </p>
+
+    <h2 style="font-family: 'Robot'; font-weight: normal; color: rgb(141, 1, 1);">Fontes baixadas</h2>
+    <p style="font-family: 'Hills', Times, serif;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, obcaecati quae sequi non fugit, ex magnam eos omnis nam ullam repellat necessitatibus sit vitae? Nisi accusamus quibusdam culpa suscipit veniam!
+    </p>
+
+</body>
+</html>

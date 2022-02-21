@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: magenta;
+        }
+    </style>
+        <!--
+            criado um seletor de style para todas as tags mark. Altera todos os marks da página 
+        -->
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    
+
+    <h2>Negrito / Destaque</h2>
+    <p>
+        Nessa frase temos um <b>termo em negrito</b> utilizando a tag b (não semântica).
+    </p>
+    <p>
+        Nessa frase temos um <strong>termo em destaque</strong> utilizando a tag strong (negrito com semântica).
+    </p>
+  
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        Nessa frase temos um <i>termo em italico</i> usando a tag i (não semântico).
+    </p>
+    <p>
+        Nessa frase temos um <em>termo em ênfase</em> usando a tag em (com semântica).
+    </p>
+
+
+    <h2>Texto marcado</h2>
+    <p>
+        Podemos criar <mark style="background-color: lime;">um texto marcado</mark> usando a tag mark.
+        <!--
+            style (comando de css) em uma tag específica altera apenas essa tag
+        -->
+    </p>
+    <p>
+        outra frase <mark>marcada</mark>.
+    </p>
+
+
+    <h2>Texto pequeno</h2>
+    <p>
+        Estamos criando um <small>texto pequeno</small>.
+    </p>
+    <!--
+        para textos grandes existia a tag big, mas ela está obsoleta e agora textos grandes são do CSS 
+    -->
+
+
+    <h2>texto deletado</h2>
+    <p>
+        Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.
+    </p>
+
+
+    <h2>Texto inserido</h2>
+    <p>
+        podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois <br>
+        Existe também o <u>sublinhado</u> com a tag u (não semântica). 
+    </p>
+
+
+    <h2>Texto sobrescrito</h2>
+    <p>
+        Para inserir coisas do tipo x<sup>2</sup>
+    </p>
+    
+
+    <h2>Texto subscrito</h2>
+    <p>
+        Para inserir coisas com o H<sub>2</sub>O
+    </p>
+
+
+    <h2>código fonte / pré formatação</h2>
+    <p>
+        o comando <code>document.getElementById('teste')</code> é escrito em linguagem Javascript. <br>
+    </p>
+    <!--
+        a flag code serve para códigos não indentados 
+    -->
+    <pre>
+        <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print('o número {} é par'.format(num))
+        print('fim do programa')
+        </code>
+    </pre>
+    <!--
+        colocando a flag "code" dentro da flag "pre" se escreve o código levando em conta toda a indentação desde o começo da linha.
+    -->
+
+
+    <h2>citações</h2>
+    <h3>citações simples</h3>
+    <p>
+        como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q>
+    </p>
+    <h3>citações completas</h3>
+    <p>
+        No livro duna de Frank Herbert
+    </p>
+    <blockquote cite="Frank Herbert Dune">
+        Eu não devo ter medo. Medo é o assassino da mente. Medo é a pequena morte que leva à aniquilação total. Eu enfrentarei meu medo. Permitirei que passe por cima e através de mim. E, quando tiver passado, voltarei o olho interior para ver seu rastro. Onde o medo não estiver mais, nada haverá. Somente eu estarei.
+    </blockquote>
+
+
+    <h2>abreviações</h2>
+    <p>
+        estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
+    </p>
+
+    <h2>Texto invertido</h2>
+    <p>
+        <bdo dir="rtl">estou aprendendo</bdo>
+    </p>
+
+</body>
+</html>

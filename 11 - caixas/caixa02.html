@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags, sombras e bordas </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(104, 104, 104);
+            margin: 0px;
+        }
+
+        nav {
+            background-color: rgb(95, 94, 94);
+            padding: 5px;
+
+            /**
+                Shorthand para fazer sombra na caixa:
+                box-shadow: (deslocamento horizontal) (deslocamento vertical) (espalhamento) (sombra(cor));
+            **/
+            box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.363);
+        
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 10px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px 20px 20px 20px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px 20px 20px 20px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            margin: 20px 0px;
+            text-align: center;
+            padding: 1px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(136, 136, 136);
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: rgb(31, 47, 63);
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<!--
+    GROUP TAGS são tags de agrupamento com valor semântico.
+    header; main; footer; nav; section; article; 
+    são todas tags de div (caixas), mas com valor semântico HTML5.
+-->
+<body>
+
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="caixa02.html">link</a>
+            <a href="caixa01.html">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>coisas doidas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos maxime quia nemo impedit dolorum omnis magnam, voluptate officia. Totam incidunt fugit ut impedit officiis accusantium reiciendis perferendis debitis nisi quam.</p>
+
+                <aside>
+                    <p>artigo escrito por José</p>
+                </aside>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por João Francisco</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

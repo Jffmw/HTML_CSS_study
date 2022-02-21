@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id= em CSS é #
+    em HTML é class= em CSS é .
+*/
+
+body {
+    background-color: coral;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+#principal {
+    text-align: center;
+    color: darkslategrey;
+    background-color: darkturquoise;
+    border-radius: 10px;
+}
+/*
+    Pode-se colocar tag#'identificação' ou apenas #'identificação'.
+    colocando o segundo formato qualquer outra tag que receber a mesma identificação terá a mesma configuração de style.
+    Colocar o mesmo id em outra tag é considerado errado pela W3C
+    Para fazer a mesma função de forma correta é usado as classes (class=)
+*/
+
+.basico {
+    color: rgb(54, 39, 39);
+}
+
+.inter {
+    color: gold;
+}
+
+.avacado {
+    color: black;
+}
+
+.destaque {
+    background-color: rgb(94, 135, 245);
+}
+
+h2 {
+    color: darkslateblue;
+}

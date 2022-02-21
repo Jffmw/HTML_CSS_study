@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+
+<body>
+    <h1>links</h1>
+    <h2>Links externos</h2>
+    <p>
+        você pode acessar 
+        <a href="https://github.com/Jffmw" target="_blank" rel="external">
+            minha página do github
+        </a>
+    </p>
+    <!--
+        a flag "a" envelopa uma frase que será hyperlink.
+        em "href" colocamos o link a ser direcionado.
+        "rel" com "external" diz que o link é um relativo a externo (link externo).
+        "target" com "_blank" faz com que o link seja targueado para uma página em branco e não sobreposto na própria página.
+    -->
+
+    <h2>links interno</h2>
+    <p>
+        você pode acessar a <a href="pg002.html" target="_self" rel="next">página 2 por aqui</a> 
+    </p>
+    <!-- 
+        rel next representa que é referente a uma página que é sucessora da página atual.
+        target self diz que a página será aberta por cima da página atual.
+    -->
+
+    <p>
+        acessar a <a href="pombas/pg003.html" target="_self" rel="next">página 3</a>
+    </p>
+    <hr>
+
+
+    <h2>links de downloads</h2>
+    <ul>
+        <li><a href="book/JAVÃO- 1º Capítulo.pdf" target="_blank"  type="application/pdf">livro em pdf</a></li>
+        <li><a href="book/JAVÃO- 1º Capítulo.zip" download="JAVÃO- 1º Capítulo.zip" type="application/zip">livro zipado</a></li>
+    </ul>
+    <!-- 
+        fazemos a referencia do caminho do arquivo com "href".
+        colocamos o indicativo de "download" com o nome do arquivo.
+        por fim é colocado em o type do arquivo. Cada type de arquivo pode ter uma sintaxe diferente então é necessário pesquisar para cada arquivo que for colocado para donwload.
+    -->
+
+    <h2>links em imagens</h2>
+    <a href="https://github.com/" target="_blank" rel="external">
+        <img src="image/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png" alt="logo github">
+    </a>
+</body>
+
+</html>

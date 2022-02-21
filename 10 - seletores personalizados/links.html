@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: maroon;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: mediumblue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(161, 161, 64);
+        }
+
+        /**
+            até agora vimos pseudos classes.
+            agora um pseudo elemento podem adicionar customizações maiores 
+            
+        **/ 
+        a::after {
+            content: ' [link]';
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>lista de links</h1>
+    <ul>
+        <li><a href="https://pointerpointer.com/" target="_blank">ponteiro</a></li>
+        <li><a href="https://play2048.co/" target="_blank">2048</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">cats cats</a></li>
+    </ul>
+    
+</body>
+</html>

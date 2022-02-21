@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        main {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /** 
+            * na font family podemos colocar uma ordem de fontes que podem ser carregadas.
+            * importante colocar como ultima opção o nome da família de fontes que queremos,
+            assim quando nenhuma das fontes escolhidas é carregada, será carregada uma fonte genérica da família.
+            * Famílias de fonte: serifada (com pézinho) sem serifa (sem pezinho) mono espaçada (todas a letras da fonte ocupam o mesmo espaço horizontal) cursiva (imita letra cursiva e feita a mão) efeito (não segue regra).
+            **/
+
+
+
+            font-size: 1.5em;
+            /**
+            * Medidas absolutas 
+            -> cm, mm, in, px (pixel), pt (ponto), pc (pica)
+            ** medidas absolutas podem gerar o problema que cada dispositivo representa essa medida de forma diferente.
+            
+            * Medidas Relativas
+            -> em (altura m), ex (altura x), rem (altura do root), vw (porcentagem da largura da view port(tela toda)), vh (porcentagem da altura da view port)
+            ** geralmente 1em = 16px
+            * a w3m recomenda utilização de em e px
+            **/
+
+            font-weight: bold;
+            /** vaira o peso do da fonte (negrito)
+            pode ser escolhido por nome ou por variação numérica (permite maior customização). 
+            Nem todas as fontes possuem todos os pesos.
+            **/
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            
+
+            font-style: italic;
+            text-decoration: line-through; 
+            /**
+            outras customizações de fonte como itálico, sublinhado etc
+            **/
+
+        }
+
+        h2 {
+            /**
+            * as informações font-family, font-weight, font-size e font-style podem ser colocadas de formar simplificada com uma shorthand.
+            * shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            **/ 
+            font: italic bolder 3em Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <h2>ve ai doido</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat deleniti quasi a est debitis veritatis suscipit, sint dignissimos qui, ad, incidunt velit ullam perspiciatis fugiat numquam et quidem animi.</p>
+    </main>
+</body>
+</html>

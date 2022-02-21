@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        h1 {
+
+            /**
+                Propriedades das caixas 
+                -  content
+                -  padding
+                -  border
+                -  margin
+                -  outline
+            **/
+
+            /** H1 é por padrão box-level
+            ela pode ser transformada em uma box inline-level com o comando
+                display: inline;
+                display: block; transforma inline em block
+            **/
+            
+
+            background-color: lightpink;
+            height: 300px;
+            width: 300px;
+
+            /*
+            formar normal de borda
+                border-width: 10px;
+                border-style: solid;
+                border-color: lightsalmon;
+            */
+
+            border: 10px solid lightsalmon;
+            /**
+            border short hand
+                border: width style color;
+            **/
+
+            /**
+            forma normal de padding
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+            **/
+
+            padding: 10px 10px 10px 10px; 
+            /**
+            padding short hand
+                padding: top right bottom left;
+            **/
+
+            margin: 20px auto 40px auto; 
+            /* centraliza a box 
+                é possível centralizar a margem no shorthand com margin: xpx auto xpx auto; 
+            */
+            
+        }
+
+        a {
+            display: block;
+            border-width: 1px;
+            border-style: solid;
+            border-color: lightslategrey;
+
+            /**
+            formar normal de margin
+
+                margin-top: 1px;
+                margin-right: 1px;
+                margin-bottom: 1px;
+                margin-left: 1px;
+            **/
+
+            margin: 10px 50px;
+            /**
+            margin short hand
+                margin: top right bottom left;
+                margin: (top and bottom) (right and left)
+                margin: (all four)
+            **/
+
+            outline: 2px dashed salmon;
+            /*
+            outline-width: 1px;
+            outline-style: dashed;
+            outline-color: olive;
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Caixa box-level é uma caixa que ocupa toda a largura da linha de texto. Parágrafos são box-level <br>
+    <a href="#">Links são exemplos de caixa inline-level</a> box inline-level não causam uma quebra de linha, isto é, não ocupam toda a largura da linha de texto.
+    </p>
+    
+</body>
+</html>
