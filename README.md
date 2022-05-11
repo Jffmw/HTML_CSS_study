@@ -1,3 +1,3 @@
-# HTML_CSS_study
+# Learning_HTML_CSS
 
 Repositório com estudos e anotações de html e css
